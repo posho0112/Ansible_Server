@@ -1,6 +1,6 @@
-# Ansible Server
+
 <h1 align = center>
- Manual de componentes para el uso de Ansible 2025
+ Ansible Server: Manual de componentes para el uso de Ansible 2025
 </h1>
 
 Este repositorio reúne una serie de recursos, ejemplos y configuraciones para utilizar Ansible. 
