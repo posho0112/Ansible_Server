@@ -1,17 +1,17 @@
-# Ansible Serve
+# Ansible Server
 <h1 align = center>
- Manual de componentes para el uso de Ansible
+ Manual de componentes para el uso de Ansible 2025
 </h1>
 
-Este repositorio re鷑e una serie de recursos, ejemplos y configuraciones para utilizar Ansible. 
-La idea es poner a disposici髇 algunas gu韆s de confecci髇 de pruebas para un servidor de Ansible.
+Este repositorio re煤ne una serie de recursos, ejemplos y configuraciones para utilizar Ansible. 
+La idea es poner a disposici贸n algunas gu铆as de confecci贸n de pruebas para un servidor de Ansible.
 
 ## Contenidos
-- [Introducci髇 a Ansible](#Introduccion)
+- [Introducci贸n a Ansible](#Introduccion)
 - [Ansible Playbooks](Docs/Playbooks_Ansible.md)
 
 <h2 id= "Introduccion"> 
-  Introducci髇 a Ansible
+  Introducci贸n a Ansible
 </h2>
 
 
@@ -19,7 +19,7 @@ La idea es poner a disposici髇 algunas gu韆s de confecci髇 de pruebas para un se
   Ansible Playbooks
 </h2>
 
-Los Ansible playbooks son archivos en formato YAML que contienen una serie de instrucciones para automatizar tareas en m鷏tiples servidores. 
-Son la parte fundamental para la implementaci髇 de Ansible, ya que permiten orquestaciones y gesti髇 de tareas eficientemente, de manera remota.
-Para m醩 detalles, consulte el siguiente enlace:
+Los Ansible playbooks son archivos en formato YAML que contienen una serie de instrucciones para automatizar tareas en m煤ltiples servidores. 
+Son la parte fundamental para la implementaci贸n de Ansible, ya que permiten orquestaciones y gesti贸n de tareas eficientemente, de manera remota.
+Para m谩s detalles, consulte el siguiente enlace:
 [Ansible Playbooks](Docs/Playbooks_Ansible.md)
