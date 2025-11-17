@@ -10,7 +10,7 @@ La idea es poner a disposición algunas guías de confección de pruebas para un
 - [Introducción a Ansible](#Introduccion)
 - [Comandos Básicos de Ansible](#Comandos)
 - [Ansible Vault](#AnsibleVault)
-- [Ansible Playbooks](Docs/Playbooks_Ansible.md)
+- [Ansible Playbooks](#Playbooks)
 
 <h2 id= "Introduccion"> 
   Introducción a Ansible
