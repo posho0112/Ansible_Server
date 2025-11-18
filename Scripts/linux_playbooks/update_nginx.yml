@@ -1,0 +1,11 @@
+---
+- hosts: linux_hosts
+  become: true
+  tasks:
+  - name: Update nginx packages
+  apt:
+   name: nginx
+   state: latest
+   update_cache: yes
+
+ ## esto es para tener el contenido a mano de los archivos, siempre hay que tomar en cuenta la indentacion
