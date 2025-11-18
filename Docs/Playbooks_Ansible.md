@@ -119,13 +119,22 @@ _Importante_: La identación y los guiones son indispensables para el formato de
 
 <h2 id = "Ejecucion"> Ejecución de un playbook</h2>
 
-Estando en uno de los nodos master, se puede ejecutar el comando `sudo ansible-playbook -i inventory_name route/of/playbook.yml` para ejecutar dado playbook en dado inventario. Se puede omitir el parámetro del inventario (indicado por la flag -i) si se tiene por defecto una ruta que señale qué nodos esclavos se quieren levantar. 
+Estando en uno de los nodos master, se puede ejecutar el comando 
+```
+sudo ansible-playbook -i inventory_name route/of/playbook.yml
+```
+para ejecutar dado playbook en dado inventario. Se puede omitir el parámetro del inventario (indicado por la flag -i) si se tiene por defecto una ruta que señale qué nodos esclavos se quieren levantar. Si se está manejano
 
 <h3> Programación de playbooks</h3> 
 
 _Queda pendiente revisarlos en el master corriendo_
 
-En el nodo master se encuentra la carpeta _cron jobs_, en donde se pueden definir archivos que programen la ejecución de dado playbook en los nodos esclavos. Se utiliza la opción `ansible-connection:local`. La idea es que el playbook se ejecute localmente en el nodo central de Ansible y que en el momento dado se ejecute en los esclavos. 
+En el nodo master se encuentra la carpeta _cron jobs_, en donde se pueden definir archivos que programen la ejecución de dado playbook en los nodos esclavos. Se utiliza la opción 
+```
+ansible-connection:local
+```
+
+La idea es que el playbook se ejecute localmente en el nodo central de Ansible y que en el momento dado se ejecute en los esclavos. 
 En el cron job, al inicio del archivo se encuentra la sección que indica la hora y día en que se ejecutarán los playbooks, siguiendo el formato `# # # # #`, es decir, una tupla de 5 campos, respectivamente, minuto (0-59), hora(0-23), día del mes (1-31), mes (1-12, jan-dec) y el día de la semana (0-7). Entonces, si por ejemplo se desea programar una tarea para cada domingo a las 10 am, se introduce:
 
 ```
