@@ -1,0 +1,10 @@
+﻿---
+- hosts: linux_hosts
+  become: true
+  tasks:
+  - name: Copy host file to remote machine
+    copy:
+      src: /etc/ansible/playbooks_linux/files/test_file.txt
+      dest: /tmp/hosts_backup
+      owner: root
+      mode: '0644'
