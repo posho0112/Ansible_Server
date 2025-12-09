@@ -1,0 +1,10 @@
+---
+- hosts: linux_hosts
+  become: true
+  tasks:
+  - name: 
+    win_find:
+    paths: C:\temp
+	use_regex: yes
+	patterns: '*.bin'
+ 
